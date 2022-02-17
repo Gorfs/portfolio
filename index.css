@@ -1,0 +1,74 @@
+.link {
+  text-decoration: none;
+  color: black;
+}
+.link:hover {
+  color: rgb(255, 2, 2);
+}
+
+.text {
+  text-align: center;
+  text-decoration: None;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/* is a flex container for the nav area*/
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 3vw;
+  width: 100vw;
+  font-size: large;
+  font-weight: 500;
+  background-color: white;
+}
+/*used for the children of the nav section*/
+.nav-item {
+  align-self: center;
+  justify-self: center;
+  height: 3vh;
+}
+.greeting {
+  height: 100vh;
+  min-height: 100vh;
+  width: 100vw;
+  padding-top: 28vh;
+  padding-left: 30vw;
+  font-size: 6vw;
+  display: flex;
+  flex-direction: row;
+  background: rgb(158, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(158, 255, 255, 1) 0%,
+    rgba(158, 255, 255, 1) 57%,
+    rgba(255, 158, 235, 1) 79% 100%
+  );
+}
+.blinking-box {
+  background-color: rgb(33, 37, 41);
+  height: 6vw;
+  margin-left: 2vw;
+  margin-top: 1vh;
+  width: 0.25vw;
+}
+.Title {
+  font-size: 4vw;
+  font-weight: 400;
+  background: rgb(255, 158, 235, 1);
+}
+.About_me {
+  background: rgb(255, 158, 235);
+  height: 80vw;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 158, 235, 1) 28%,
+    rgba(228, 143, 31, 1) 90%,
+    rgba(228, 143, 31, 1) 100%
+  );
+}
+
+.About_text {
+  font-size: 1.25vw;
+}
