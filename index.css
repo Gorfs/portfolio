@@ -1,9 +1,27 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin-right: 0px;
+}
 .link {
   text-decoration: none;
   color: black;
 }
 .link:hover {
   color: rgb(255, 2, 2);
+  font-stretch: expanded;
+}
+.link-project {
+  color: black;
+  text-decoration: none;
+}
+.link-project:hover {
+  color: black;
+  text-decoration: none;
+}
+.hide {
+  display: none;
 }
 
 .text {
@@ -22,6 +40,8 @@
   font-size: large;
   font-weight: 500;
   background-color: white;
+  position: fixed;
+  top: -2px;
 }
 /*used for the children of the nav section*/
 .nav-item {
@@ -56,11 +76,14 @@
 .Title {
   font-size: 4vw;
   font-weight: 400;
-  background: rgb(255, 158, 235, 1);
+  /*background: rgb(255, 158, 235, 1);*/
+}
+.section {
+  height: 80vw;
+  margin-right: 0px;
 }
 .About_me {
   background: rgb(255, 158, 235);
-  height: 80vw;
   background: linear-gradient(
     180deg,
     rgba(255, 158, 235, 1) 28%,
@@ -69,6 +92,152 @@
   );
 }
 
-.About_text {
+/* section for the projects part of the page*/
+.Projects_color {
+  background: rgb(228, 143, 31);
+  background: linear-gradient(
+    180deg,
+    rgba(228, 143, 31, 1) 0%,
+    rgba(228, 143, 31, 1) 80%,
+    rgba(0, 255, 8, 1) 100%
+  );
+}
+.section_text {
   font-size: 1.25vw;
 }
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+.projects_child {
+  background-color: white;
+  border-radius: 25%;
+  height: fit-content;
+  max-height: 17vw;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  transition: background-color 0.6s ease;
+}
+.projects-img {
+  max-width: 30vw;
+  max-height: 17vw;
+  height: fit-content;
+  border-radius: 20%;
+}
+.project-div {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  align-items: center;
+}
+.project-desc1 {
+  position: relative;
+  bottom: 16vw;
+  max-height: 17vw;
+  padding-top: 2vw;
+
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1vw;
+  border-radius: 20%;
+  height: 20vw;
+  overflow: hidden;
+}
+.project-desc2 {
+  position: relative;
+  bottom: 17vw;
+  max-height: 17vw;
+  padding-top: 2vw;
+
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1vw;
+  border-radius: 20%;
+  height: 20vw;
+  overflow: hidden;
+}
+.project-desc3 {
+  position: relative;
+  bottom: 17vw;
+  padding-top: 2vw;
+  max-width: 12vw;
+  max-height: 17vw;
+  padding-bottom: 1vw;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1vw;
+  border-radius: 20%;
+  z-index: 10;
+  overflow: hidden;
+}
+.projects_child:hover .project-desc1 {
+  display: block;
+}
+.projects_child:hover .project-desc2 {
+  display: block;
+}
+.projects_child:hover .project-desc3 {
+  display: block;
+}
+/* end of the projects section of the page*/
+
+@media only screen and (max-width: 1000px) {
+  .nav {
+    font-size: 3.5vw;
+    height: 6vw;
+  }
+  .section_text {
+    font-size: 4vw;
+  }
+  .greeting {
+    height: 40vh;
+    min-height: 100vh;
+    padding-top: 28vh;
+    padding-left: 15vw;
+    font-size: 10vw;
+  }
+  .blinking-box {
+    height: 10vw;
+  }
+  .Title {
+    font-size: 7vw;
+  }
+  .section {
+    height: 120vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+  .section_text {
+    font-size: 3vw;
+  }
+  .projects-container {
+    flex-direction: column;
+    height: 100vh;
+  }
+  .projects-img {
+    max-height: 20vh;
+    max-width: 80vw;
+  }
+  .project-desc1 {
+    position: relative;
+    max-height: 30vh;
+    height: 19vh;
+    bottom: 19vh;
+  }
+  .project-desc2 {
+    position: relative;
+    max-height: 30vh;
+    height: 19vh;
+    bottom: 19vh;
+  }
+  .project-desc3 {
+    position: relative;
+    max-height: 30vh;
+    height: 19vh;
+    bottom: 19vh;
+    max-width: 14vh;
+    width: 14vh;
+  }
+}
+
