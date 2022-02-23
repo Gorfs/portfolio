@@ -1,174 +1,108 @@
 <!DOCTYPE html>
-<!--portfolio made by archie beales-->
-<link rel="stylesheet" href="index.css" />
-<html lang="en">
-  <!--required meta tags-->
+<html>
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width , initial-scale=1, shrink-to-fit=no"
-    />
-    <!--more meta tags for google -->
+    <link rel="stylesheet" href="index.css" />
+    <html lang="en">
+      <!--required meta tags-->
+      <head>
+        <meta charset="utf-8" />
+        <!--for the vw and vh tags-->
+        <meta
+          name="viewport"
+          content="width=device-width , initial-scale=1, shrink-to-fit=no"
+        />
+        <!--more meta tags for google -->
 
-    <!--bootstrap for CSS-->
+        <!--bootstrap for CSS-->
 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="path/to/font-awesome/css/font-awesome.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Road+Rage&family=Roboto+Condensed:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <script type="text/javascript" src="index.JS"></script>
+        <link
+          rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous"
+        />
+        <!--for animate on scroll-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <title>Archie Beales Protfolio</title>
+        <!--font awesome for some icons-->
+        <link
+          rel="stylesheet"
+          href="path/to/font-awesome/css/font-awesome.min.css"
+        />
+
+        <!--for the font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Road+Rage&family=Roboto+Condensed:wght@300&display=swap"
+          rel="stylesheet"
+        />
+
+        <!-- for the JS link-->
+
+        <title>Archie Beales Protfolio</title>
+      </head>
+      <body class="text background">
+        <header>
+          <nav class="nav">
+            <div class="nav__logo">
+              <!-- here the logo/title is going to go-->
+              Archie Beales
+            </div>
+            <div>
+              <!--here are gonna be the links-->
+              <ul class="nav__links">
+                <a href="#greeting">
+                  <li class="nav__link">Home</li>
+                </a>
+                <a href="#greeting">
+                  <li class="nav__link">About me</li>
+                </a>
+                <a href="#">
+                  <li class="nav__link">Projects</li>
+                </a>
+                <a href="#">
+                  <li class="nav__link">Future Aspirations</li>
+                </a>
+                <a href="#"> <li class="nav__link">Contact</li></a>
+              </ul>
+            </div>
+            <div>
+              <!-- here is gonna be the button to make it all c<script type="text/javascript" src="index.JS"></script>ome down-->
+              <button class="btn nav__toggle" id="toggle_btn">
+                <p class="nav__toggle_text">|||</p>
+              </button>
+            </div>
+          </nav>
+        </header>
+        <main>
+          <section class="text">
+            <div class="greeting">
+              <div class="welcome">
+                <div class="intro__text">
+                  <div class="intro__title">Hello There!</div>
+                  <div class="intro__summary">
+                    Welcome to my personal website
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="about-me">
+            <div class="about-me__content">
+              <div class="about-me__text">
+                <div class="about-me__title">Who am I?</div>
+                <div class="about-me__summary">
+                  Well in the bennining, in the beginnning
+                </div>
+              </div>
+              <div class="about-me__img"><img src="" alt="" /></div>
+            </div>
+          </section>
+        </main>
+        <footer></footer>
+      </body>
+    </html>
   </head>
 </html>
-<!-- making the nav section which will come in after scrolling-->
-<header class="text">
-  <section id="nav-whole" class="nav">
-    <div id="Hello-page" class="nav-item">
-      <a href="#Greeting" class="link">Intro</a>
-    </div>
-    <div id="About-me-page" class="nav-item">
-      <a href="#scroller-about-me" class="link">About-me</a>
-    </div>
-    <div id="projects-page" class="nav-item">
-      <a href="#My Projects" class="link">Projects</a>
-    </div>
-    <div id="Future-page" class="nav-item">
-      <a href="#" class="link">Future Aspirations</a>
-    </div>
-    <div id="contact-page" class="nav-item">
-      <a href="#" class="link">Talk to me</a>
-    </div>
-  </section>
-</header>
-<main class="text">
-  <!--making the big blue box and text that is the main THING on entry-->
-  <section id="Greeting" class="greeting">
-    <div>>>> Welcome !!</div>
-    <div id="blinking-box" class="blinking-box"></div>
-  </section>
-  <!--this is gonna be the about me page-->
-  <div id="scroller-about-me"></div>
-  <section id="About_me" class="text section About_me">
-    <div class="Title">Who am I?</div>
-    <div class="section_text">
-      <br />
-      First off, Hi there, <br />
-      My name Is Archie Beales, I am a 17 year who wants to go to Your
-      University!
-      <br />
-      My Pasion with technology started off at a young age when I used to ask
-      myself how these cool magical boxes worked,<br />
-      I have been using a computer for almost my entire life.<br />
-      And thus I gained countless skills in the process of just having fun,<br />
-      <br />
-      When I was in middle-school, one class stood out amongst them all,
-      technology. <br />
-      In this class I wrote... dragged my first lines of code in "scratch",
-      <br />
-      I used this to make games, make programs and even control a robot. <br />
-      The hours I spent in that classroom will be some of the fondest memories I
-      have tinkering with my friends.
-      <br />
-      <br />
-      When I was in 4eme I started to learn about other languages and thus I
-      started my python journey.<br />
-      During my time learning python I have dabbled in hundreds of
-      concepts...<br />
-      I thus have experience in web development, software development,
-      penetration-testing, linux machines and much more... <br />
-      <br />
-      TL:DR I love tech and want to continue my journey to learn more!
-      <br /><br />
-      <img src="me.jpg" alt="a photo of me" class="image__img" id="me_photo" />
-    </div>
-  </section>
-  <section
-    id="My Projects"
-    class="text section projects_color section__projects"
-  >
-    <div class="Title">What have I made?</div>
-    <div class="section_text">
-      Here are a few of the projects I have made so far:
-    </div>
-    <br /><br />
-    <div class="projects-container">
-      <!--want to show 3 different projects-->
-      <!--this better fucking work!!!-->
-      <a href="http://a2zenglish.fr">
-        <div class="image">
-          <img
-            src="a2z.png"
-            alt="website that my family runs"
-            class="image__img"
-          />
-          <div class="image__overlay">
-            <div class="image__title">Website</div>
-            <p class="image__description">
-              Here is that site that I made for my parents buisness <br />
-              it has multiple pages and even has google forms integration.
-            </p>
-          </div>
-        </div></a
-      >
-      <a href="#github">
-        <div class="image">
-          <img
-            src="FC.jpg"
-            alt="image of fleet carrier from elite dangerous"
-            class="image__img"
-          />
-          <div class="image__overlay">
-            <div class="image__title">Auto Space ship flight cours plotter</div>
-            <p class="image__description">
-              This basically a macro that help players fly a space ship in a
-              video game automitically, also refules your ship.
-            </p>
-          </div>
-        </div>
-      </a>
-      <a href="#replit thing">
-        <div class="image" id="discord-img">
-          <img src="boni.png" alt="discord profile of bot" class="image__img" />
-          <div class="image__overlay">
-            <div class="image__title">Discord bot</div>
-            <p class="image__description">
-              This discord bot was made to make me and my friends laugh as it
-              says funny quotes from one of our more extravagante teachers xd.
-            </p>
-          </div>
-        </div>
-      </a>
-    </div>
-  </section>
-</main>
-<!--
-<script>
-  const desc1 = document.querySelector(".project-desc1")
-  const desc_container1 = document.querySelector(".projects-container")
-  console.log(desc_container1)
-  const desc2 = document.getElementById("#project_desc_2")
-  const desc_container2 = document.getElementById("#autojumper_project")
-
-  const desc3 = document.getElementById("#project_desc_3")
-  const desc_container3 = document.getElementById("#Discord_project")
-
-  desc_container1.addEventListener("mouseenter", function () {
-    console.log("entered the function")
-    desc1.classList.toggle("hide")
-    console.log("exited the function")
-  })
-</script>-->
+<script type="text/javascript" src="index.JS"></script>
