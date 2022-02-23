@@ -1,4 +1,7 @@
 /* general use for all the page*/
+html {
+  scroll-behavior: smooth;
+}
 .text {
   font-family: "Open Sans", sans-serif;
   font-size: 40px;
@@ -6,13 +9,16 @@
 }
 body {
   background-image: url("background_greeting.jpeg");
-  background-attachment: fixed;
+  scroll-behavior: smooth;
+  background-size: cover;
+  background-attachment: center;
 }
 /*making the class used for the nav*/
 .nav {
   position: fixed;
   top: 0;
   color: rgb(54, 51, 51);
+  color: white;
   display: flex;
   flex-direction: column;
   justify-self: center;
@@ -26,7 +32,10 @@ body {
   transition: background-color 0.4s;
 }
 .nav:hover {
-  background-color: aliceblue;
+  background-color: rgb(68, 62, 62);
+}
+.black-background {
+  background-color: rgb(68, 62, 62);
 }
 .nav__logo {
   padding-left: 1vw;
@@ -36,6 +45,7 @@ body {
 .nav__links {
   /* for mobile to remove in bigger screen*/
   position: absolute;
+
   left: 0;
   top: -300px;
   min-width: 100vw;
@@ -52,6 +62,9 @@ body {
   text-decoration: none;
   background-color: transparent;
 }
+.nav__links:hover {
+  text-decoration: none;
+}
 .nav__link {
   /**/
   margin-top: 10px;
@@ -59,12 +72,16 @@ body {
   /**/
   transition: color 0.4s;
   text-decoration: none;
-  color: rgb(54, 51, 51);
+
+  color: white;
 }
 .nav__link:hover {
   text-decoration: none;
   color: rgb(21, 133, 207);
   cursor: pointer;
+}
+.black__color {
+  color: rgb(54, 51, 51);
 }
 .nav__toggle {
   height: 40px;
@@ -76,9 +93,11 @@ body {
   top: 4px;
   z-index: 2;
 }
-.nav__toggle__text {
-  font-size: 80px;
+.nav__toggle_text {
+  font-size: 20px;
   font-weight: 900;
+  color: white;
+  transition: transform 0.4s;
 }
 .nav__toggle:hover {
   transform: rotate(90deg);
@@ -114,17 +133,25 @@ body {
     /**/
   }
 }
+@media screen and (max-width: 1250px) {
+  .nav__links {
+    background-color: rgb(68, 62, 62);
+  }
+  .nav__toggle {
+    color: aliceblue;
+  }
+}
 /* end of the section on the nav bar*/
 
 .greeting {
   margin-top: 50px;
-  background-attachment: fixed;
   top: 0px;
   left: 0px;
   z-index: 0;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: url("background_greeting.jpeg");
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   width: 100%;
   min-height: 100vh;
   background-color: rgba(0, 0, 0, 0.1);
@@ -150,9 +177,14 @@ body {
 .intro__summary {
   font-weight: 200;
 }
+@media screen and (max-width: 1250px) {
+  .intro__text {
+    width: 100%;
+  }
+}
 
 .about-me {
-  height: 109vh;
+  height: 100vh;
   width: 100%;
   z-index: 0;
   display: flex;
@@ -160,15 +192,19 @@ body {
 }
 .about-me__content {
   background: rgb(37, 38, 39);
-  height: 100vh;
+  height: 100%;
   z-index: 1;
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
 }
 .about-me__text {
   padding-top: 80px;
-  width: 60%;
+  padding-left: 2em;
+  width: 55%;
   height: 100vh;
   font-size: 25px;
   display: flex;
@@ -181,4 +217,54 @@ body {
 .about-me__title {
   font-size: 80px;
   color: white;
+}
+.about-me__summary {
+  font-size: 25px;
+  text-align: center;
+}
+.about-me__img {
+  max-width: 100%;
+  max-height: 100%;
+  min-height: 100%;
+
+  border-radius: 20px;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-me__img img {
+  max-width: 60%;
+  border-radius: 100%;
+  background-color: rgb(32, 54, 65);
+}
+@media screen and (max-width: 1250px) {
+  .about-me__content {
+    flex-direction: column;
+  }
+  .about-me__text {
+    width: 100%;
+  }
+  .about-me__content {
+    height: 130vh;
+    padding-right: 2vw;
+    text-align: center;
+  }
+  .about-me__img {
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    height: 50%;
+    width: 50%;
+    align-items: baseline;
+    margin-left: 30vw;
+  }
+}
+@media screen and (max-width: 950px) {
+  .about-me__summary {
+    font-size: 20px;
+  }
+  .about-me__img {
+    margin-top: 10vw;
+  }
 }
