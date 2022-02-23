@@ -55,7 +55,7 @@
                 <a href="#greeting">
                   <li class="nav__link">Home</li>
                 </a>
-                <a href="#greeting">
+                <a href="#about-me">
                   <li class="nav__link">About me</li>
                 </a>
                 <a href="#">
@@ -77,32 +77,67 @@
         </header>
         <main>
           <section class="text">
-            <div class="greeting">
+            <div class="greeting" id="greeting">
               <div class="welcome">
                 <div class="intro__text">
-                  <div class="intro__title">Hello There!</div>
-                  <div class="intro__summary">
+                  <div class="intro__title" data-aos="fade-right">Hello There!</div>
+                  <div class="intro__summary" data-aos="fade-right">
                     Welcome to my personal website
                   </div>
                 </div>
               </div>
             </div>
           </section>
-          <section class="about-me">
+          <section class="about-me" id="about-me">
             <div class="about-me__content">
               <div class="about-me__text">
-                <div class="about-me__title">Who am I?</div>
-                <div class="about-me__summary">
-                  Well in the bennining, in the beginnning
+                <div class="about-me__title" data-aos="fade-down" data-eos-offset="200">Who am I? </div>
+                <div class="about-me__summary" data-aos="fade-right">
+                  First off, Hi there, <br />
+                  My name Is Archie Beales, I am a 17 year who wants to go to Your
+                  University!
+                  <br />
+                  My Pasion with technology started off at a young age when I used to ask
+                  myself how these cool magical box</body>es worked,<br />
+                  I have been using a computer for almost my entire life.<br />
+                  And thus I gained countless skills in the process of just having fun,<br />
+                  <br />
+                  When I was in middle-school, one class stood out amongst them all,
+                  technology. <br />
+                  In this class I wrote... dragged my first lines of code in "scratch",
+                  <br />
+                  I used this to make games, make programs and even control a robot.
+                  <br />
+                  The hours I spent in that classroom will be some of the fondest memories
+                  I have tinkering with my friends.
+                  <br />
+                  <br />
+                  When I was in 4eme I started to learn about other languages and thus I
+                  started my python journey.<br />
+                  During my time learning python I have dabbled in hundreds of
+                  concepts...<br />
+                  I thus have experience in web development, software development,
+                  penetration-testing, linux machines and much more... <br />
+                  <br />
+                  TL:DR I love tech and want to continue my journey to learn more!
+                  <br /><br />
                 </div>
               </div>
-              <div class="about-me__img"><img src="" alt="" /></div>
+              <div class="about-me__img" data-aos="fade-left" data-eos-offset="200"><img src="me-not-shit.png" alt="photo of me" /></div>
             </div>
           </section>
         </main>
-        <footer></footer>
+        <footer><script type="text/javascript" src="index.JS"></script></footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+        AOS.init({
+          offset:650,
+          duration:800
+        }
+        )
+      </script>
       </body>
     </html>
   </head>
 </html>
-<script type="text/javascript" src="index.JS"></script>
+
