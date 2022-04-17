@@ -1,5 +1,6 @@
-var blink_speed = 500 // every 1000 == 1 second, adjust to suit
-var t = setInterval(function () {
-  var ele = document.getElementById("blinking-box")
-  ele.style.visibility = ele.style.visibility == "hidden" ? "" : "hidden"
-}, blink_speed)
+const LinkButton = document.querySelector(".btn")
+const links = document.querySelector(".nav__optionsContainer")
+LinkButton.addEventListener("click", () => {
+  console.log("hello World")
+  links.classList.toggle("show-links")
+})
