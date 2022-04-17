@@ -68,6 +68,7 @@
         <div class="waveWrapperInner bgTop">
           <div
             class="wave waveTop"
+            
             style="
               background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png');
             "
@@ -91,7 +92,122 @@
         </div>
       </div>
       <!-- end of the waves. and thus the start of the about me section of the site -->
-      section.
+      <section class="stats" id="aboutMe">
+        <h2 class="stats__title">What can I do?</h2>
+        <!-- 
+        <div class="stats__container">
+           this div will hold all the stats
+          <div class="ageContainer">
+            
+            <h3>Age: 17* <i class="stats__italic">*might change in future</i></h3>
+            
+          </div> <br />
+          <div class="ageContainer">
+    
+            <h3>Nationality: <span class="stats__stat">British</span></h3>
+          </div>
+
+          <div class="languagesContainer">
+            <h3>languages:</h3>
+            <div class="languages__list stats__stat">
+              <div id="english">  English   C2</div>
+              <div id="french">  French  C1</div>
+              <div id="spanish">  Spanish  A2</div>
+              
+            </div>
+          </div> 
+          <div class="ageContainer">
+            <h3>Prefered OS:   <span class="stats__stat">Gnu/linux (Ubuntu)</span></h3>
+          </div>
+          <div class="ageContainer">
+            <h3> Class: <span class="stats__stat"> Terminale Numerique</span></h3>
+          </div>
+          <div class="ageContainer">
+            <h3><span class="stats__stat"></span></h3>
+          </div>
+        </div>
+        <hr /> -->
+        <div class="abilityContainer">
+          <!-- this is where I am going to flex stuff and basically inpire off of theo's thing -->
+          <!-- this will have 2 divs that each will have 2 divs. therefore 7 divs total -->
+          <div class="abilityMiniContainer">
+            <div class="ability">
+              <h3 class="ability__title"> <i class="fa-solid fa-code"></i> Coding:</h3>
+              <div class="abilityContent">
+                <i class="fa-brands fa-html5"></i> HTML <br>
+                <i class="fa-brands fa-js"></i> JS  <br>
+                <i class="fa-brands fa-css3-alt"></i> CSS <br>
+                <i class="fa-solid fa-database"></i> SQL <br>
+                <i class="fa-brands fa-python"></i> Python <br>
+                <i class="fa-solid fa-power-off"></i> Penetration Testing <br>
+                <i class="fa-solid fa-cloud"></i> Cloud computing
+
+              </div>
+            </div>
+            <div class="ability">
+              <h3 class="ability__title"><i class="fa-solid fa-earth-europe"></i> Languages:</h3>
+              <div class="abilityContent">
+                French C2<br> 
+                English C2<br> 
+                Spanish A2<br> 
+              </div>
+            </div>
+          </div>
+          <div class="abilityMiniContainer">
+            <div class="ability">
+              <h3 class="ability__title"> <i class="fa-solid fa-file-word"></i> Tools:</h3>
+              <div class="abilityContent">
+                <i class="fa-brands fa-linux"></i> UNIX <br>
+                <i class="fa-brands fa-wordpress-simple"></i> Wordpress <br>
+                <i class="fa-brands fa-windows"></i> Windows <br>
+                <i class="fa-brands fa-discord"></i> Discord <br>
+                
+              </div>
+            </div>
+            <div class="ability">
+              <h3 class="ability__title"><i class="fa-solid fa-universal-access"></i> Qualities:</h3> 
+              <div class="abilityContent">
+                <i class="fa-solid fa-brain"></i> Curious <br>
+                <i class="fa-regular fa-clock"></i> Never late<br>
+                <i class="fa-regular fa-newspaper"></i> up to date<br>
+              </div>
+            </div>
+          </div> 
+        </div>
+      <div class="projectsContainer">
+        <h2 class="projects__Title">What Have I worked on?</h2>
+        <div class="projectsMiniContainer">
+          <a href="#" class="projectLink">
+          <div class="project">
+            <img src="./boni.png" alt="picture of discord profile of my bot">
+            <div class="project__desc">
+              <h4 class="project__descTitle">Discord Bot</h4>
+              <p class="project__descContent">A discord bot made in a discord.py to emulate on of my teachers</p>
+            </div>
+          </div></a>
+          <div class="projectsSideContainer">
+          
+          <a href="https://gorfs.github.io/etch-a-sketch/" class="projectLink">
+          <div class="project">
+            <img src="./etchAsketch.png" alt="image of my etch-a-sketch game" class="project__img">
+            <div class="project__desc">
+              <h4 class="project__descTitle">etch-a-sketch</h4>
+              <p class="project__descContent">A Simple drawing whiteboard made with JavaScript</p>
+            </div>
+          </div></a>
+
+          <a href="https://github.com/Gorfs/motionTracker" class="projectLink">
+          <div class="project">
+            <img src="./motion.jpg" alt="image example of motion tracking" class="project__img">
+            <div class="project__desc">
+              <h4 class="project__descTitle">Motion Tracker</h4>
+              <p class="project__descContent">using OpenCv and python I made a motion tracker <br> to see when my mum went into my room</p>
+            </div>
+          </div></a>
+        </div>
+      </div>
+    </div>
+      </section>
       
   </body>
   <script
@@ -114,4 +230,5 @@
     }
     var typed = new Typed(".writerContainer", options)
   </script>
+  <script src="https://kit.fontawesome.com/1d871d8ea3.js" crossorigin="anonymous"></script>
 </html>

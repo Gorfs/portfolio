@@ -3,7 +3,7 @@ body {
   margin-left: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
-  height: 200vh;
+  min-height: 200vh;
 }
 .hidden {
   display: none;
@@ -61,13 +61,12 @@ body {
   width: 100%;
   margin-top: 0px;
   margin-bottom: 0px;
-  transition: background-color 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
-  transition: color 0.7s;
+  transition: background-color 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .nav__option:hover {
   background-color: rgb(54, 54, 52);
   border-radius: 10px;
-  color: rgb(10, 255, 255);
+  color: rgb(68, 255, 255);
 }
 .btn {
   border: none;
@@ -140,14 +139,15 @@ body {
   position: absolute;
   z-index: -1;
   max-width: 100vw !important;
+  background-color: transparent;
 }
 .waveWrapperInner {
   position: absolute;
   width: 100%;
   overflow: hidden;
   height: 100%;
-  bottom: -1px;
-  background-image: linear-gradient(to top, #86377b 20%, #6e6e97 80%);
+  background-image: linear-gradient(to top, #1cb2bd 20%, rgb(37, 37, 35) 95%);
+  background-color: transparent;
 }
 .bgTop {
   z-index: 15;
@@ -168,6 +168,7 @@ body {
   background-repeat: repeat no-repeat;
   background-position: 0 bottom;
   transform-origin: center bottom;
+  background-color: transparent;
 }
 .waveTop {
   background-size: 50% 100px;
@@ -186,6 +187,7 @@ body {
 }
 .waveBottom {
   background-size: 50% 100px;
+  background-color: transparent;
 }
 .waveAnimation .waveBottom {
   animation: move_wave 15s linear infinite;
@@ -215,4 +217,146 @@ body {
   .wave__title {
     font-size: 30px;
   }
+}
+
+.stats {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 95vh;
+  color: rgb(73, 70, 70);
+  z-index: -2;
+}
+.stats__title {
+  /* here is the thign about here are some stats about me */
+  font-size: 60px;
+  text-align: center;
+}
+.stats__container {
+  width: 100%;
+  min-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: -1;
+}
+.ageContainer {
+  font-size: 30px;
+}
+.stats__italic {
+  font-size: 15px;
+  font-weight: 100;
+}
+.stats__stat {
+  font-weight: 100;
+}
+.languagesContainer {
+  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+.languages__list {
+  margin-left: 4vw;
+  display: flex;
+  line-height: 45px;
+  flex-direction: column;
+}
+.abilityContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-direction: row;
+  min-height: fit-content;
+}
+.abilityMiniContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.ability {
+  margin-bottom: 4vw;
+  background-color: aliceblue;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px 5px #bfbfbf;
+  text-align: center;
+  padding-right: 1vw;
+}
+.ability__title {
+  font-size: 30px;
+}
+.abilityContent {
+  font-size: 25px;
+  text-align: left;
+  padding-left: 2vw;
+  padding-bottom: 2vw;
+}
+@media only screen and (max-width: 860px) {
+  .abilityContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ability {
+    width: 100%;
+  }
+}
+
+.projectsContainer {
+  background: url(./projects_background.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #ffffff;
+}
+.projects__Title {
+  font-size: 60px;
+}
+.projectsMiniContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  height: fit-content;
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.158);
+  text-align: center;
+  box-shadow: 5px 5px 15px 5px #bfbfbf;
+  transition: all 0.08s linear;
+}
+.project img {
+  border-radius: 20px;
+}
+
+.project__img {
+  max-height: 200px;
+}
+.projectLink {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.projectsSideContainer {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.project:hover {
+  transform: scale(90%, 90%);
 }
