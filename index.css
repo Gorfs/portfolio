@@ -2,9 +2,10 @@ body {
   margin-right: 0px;
   margin-left: 0px;
   margin-top: 0px;
-  margin: bottom:0px;
+  margin-bottom: 0px;
+  height: 200vh;
 }
-.hidden{
+.hidden {
   display: none;
 }
 .text {
@@ -20,16 +21,16 @@ body {
   background-color: rgb(37, 37, 35);
   width: 100%;
   position: fixed;
+  z-index: 2;
 }
 .nav__title {
   /* styles for the logo/title of the navbar */
   padding-left: 2vw;
   font-weight: 10;
-  height:100%;
+  height: 100%;
   width: 20%;
-  
 }
-.nav__optionsContainer{
+.nav__optionsContainer {
   width: 100%;
 }
 .nav__options {
@@ -43,9 +44,8 @@ body {
   text-decoration: none;
   min-height: 100%;
   width: 100%;
-  
-  
-  margin-top:0px;
+
+  margin-top: 0px;
   margin-bottom: 0px;
 }
 .nav__option {
@@ -60,40 +60,38 @@ body {
   min-height: 100%;
   width: 100%;
   margin-top: 0px;
-  margin-bottom:0px;
+  margin-bottom: 0px;
   transition: background-color 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
-  transition: color 0.7s ;
+  transition: color 0.7s;
 }
-.nav__option:hover{
+.nav__option:hover {
   background-color: rgb(54, 54, 52);
   border-radius: 10px;
-  color:rgb(10, 255, 255);
+  color: rgb(10, 255, 255);
 }
-.btn{
+.btn {
   border: none;
-  background: transparent ;
+  background: transparent;
   color: white;
   position: fixed;
   top: 10px;
   right: 30px;
-  display:none;
-  transition:transform 0.6s;
+  display: none;
+  transition: transform 0.6s;
 }
-.btn:hover{
+.btn:hover {
   color: aqua;
-  transform:rotate(90deg);
+  transform: rotate(90deg);
 }
-.show-links{
+.show-links {
   top: 70px !important;
   max-height: 100vh;
   margin-bottom: 0px;
   padding-bottom: 0px;
 }
 
-
-
 @media only screen and (max-width: 860px) {
-  .nav__optionsContainer{
+  .nav__optionsContainer {
     position: absolute;
     top: -300vw;
     left: 0px;
@@ -101,26 +99,120 @@ body {
     transition: 0.4s;
     text-align: center;
   }
-  .nav__options{
+  .nav__options {
     flex-direction: column;
     padding-left: 0px;
   }
-  .nav__option{
+  .nav__option {
     min-width: 100% !important;
-    background-color:rgb(37, 37, 35);
+    background-color: rgb(37, 37, 35);
     min-height: 10.25vh !important;
-    
   }
-  .nav__option:hover{
+  .nav__option:hover {
     border-radius: 0px;
   }
-  .nav__title{
+  .nav__title {
     margin-right: 0px;
     width: 100%;
   }
-  .btn{
+  .btn {
     display: block;
   }
 }
 
-
+@keyframes move_wave {
+  0% {
+    transform: translateX(0) translateZ(0) scaleY(1);
+  }
+  50% {
+    transform: translateX(-25%) translateZ(0) scaleY(0.55);
+  }
+  100% {
+    transform: translateX(-50%) translateZ(0) scaleY(1);
+  }
+}
+.waveWrapper {
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 70px;
+  position: absolute;
+  z-index: -1;
+  max-width: 100vw !important;
+}
+.waveWrapperInner {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  bottom: -1px;
+  background-image: linear-gradient(to top, #86377b 20%, #6e6e97 80%);
+}
+.bgTop {
+  z-index: 15;
+  opacity: 0.5;
+}
+.bgMiddle {
+  z-index: 10;
+  opacity: 0.75;
+}
+.bgBottom {
+  z-index: 5;
+}
+.wave {
+  position: absolute;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-repeat: repeat no-repeat;
+  background-position: 0 bottom;
+  transform-origin: center bottom;
+}
+.waveTop {
+  background-size: 50% 100px;
+}
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+  -webkit-animation: move-wave 3s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.waveMiddle {
+  background-size: 50% 120px;
+}
+.waveAnimation .waveMiddle {
+  animation: move_wave 10s linear infinite;
+}
+.waveBottom {
+  background-size: 50% 100px;
+}
+.waveAnimation .waveBottom {
+  animation: move_wave 15s linear infinite;
+}
+.wave__title {
+  font-size: 50px;
+}
+.wave__name {
+  font-size: 60px;
+  font-weight: 200;
+}
+.waveContentContainer {
+  position: absolute;
+  top: 200px;
+  left: 6vw;
+  z-index: 30;
+  line-height: 30px;
+}
+@media only screen and (max-width: 860px) {
+  .waveContentContainer {
+    top: 60px;
+    line-height: 30px;
+  }
+  .wave__name {
+    font-size: 40px;
+  }
+  .wave__title {
+    font-size: 30px;
+  }
+}

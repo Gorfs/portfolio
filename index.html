@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    
     <title>Archie Beales</title>
   </head>
   <body class="text">
@@ -54,6 +55,63 @@
         </button>
       </div>
     </nav>
+    <!-- end of the nav section -->
+    <section class="intro">
+      <div class="waveWrapper waveAnimation">
+        <div class="waveContentContainer">
+          <div class="wave__title"><i>Hey!</i></div>
+          <h1 class="wave__name">I'm <span class="writerContainer"></span></h1>
+          <p class="wave__title"><i>And Welcome to my Portfolio!</i> </p>  
+        </div>
+        
+
+        <div class="waveWrapperInner bgTop">
+          <div
+            class="wave waveTop"
+            style="
+              background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png');
+            "
+          ></div>
+        </div>
+        <div class="waveWrapperInner bgMiddle">
+          <div
+            class="wave waveMiddle"
+            style="
+              background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png');
+            "
+          ></div>
+        </div>
+        <div class="waveWrapperInner bgBottom">
+          <div
+            class="wave waveBottom"
+            style="
+              background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png');
+            "
+          ></div>
+        </div>
+      </div>
+      <!-- end of the waves. and thus the start of the about me section of the site -->
+      section.
+      
   </body>
+  <script
+    src="https://unpkg.com/react@18/umd/react.development.js"
+    crossorigin
+  ></script>
+  <script
+    src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    crossorigin
+  ></script>
   <script src="index.JS" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var options = {
+    strings: ["Archie Beales", "British 🇬🇧", "Dedicated" , "Curious", "Open-Minded"],
+    typeSpeed: 80,
+    backSpeed: 80,
+    smartBackspace: true,
+    loop: true,
+    }
+    var typed = new Typed(".writerContainer", options)
+  </script>
 </html>

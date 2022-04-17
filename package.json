@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "typed.js": "^2.0.12",
+    "type": "module"
+  }
+}
