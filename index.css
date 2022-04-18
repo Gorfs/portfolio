@@ -391,6 +391,9 @@ html {
 .project img {
   border-radius: 20px;
 }
+.project__desc {
+  padding: 3px;
+}
 
 .project__img {
   max-height: 200px;
@@ -495,4 +498,20 @@ html {
   max-width: 100%;
   max-height: 130vh;
   z-index: -1;
+}
+.languageButton {
+  position: fixed;
+  min-height: 2px;
+  transition: all 0.6s cubic-bezier(0, 0.32, 1, 1.84);
+  bottom: 30px;
+  right: 20px;
+}
+.languageButton img {
+  max-height: 40px;
+  opacity: 0.8;
+}
+.languageButton:hover {
+  transform: rotate(30deg);
+  transform: scale(120%, 120%);
+  opacity: 1;
 }
