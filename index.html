@@ -17,6 +17,7 @@
       rel="stylesheet"
     />
      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+     
 
     <title>Archie Beales</title>
   </head>
@@ -89,41 +90,11 @@
         </div>
       </div>
       <!-- end of the waves. and thus the start of the about me section of the site -->
-      <section class="stats" id="aboutme" >
+      <section class="stats">
+        <div id="aboutme">
+          <div id="particles">
         <h2 class="stats__title" data-aos="fade-up" data-aos-duration="600" data-aos-offset="300" >What can I do?</h2>
-        <!-- 
-        <div class="stats__container">
-           this div will hold all the stats
-          <div class="ageContainer">
-            
-            <h3>Age: 17* <i class="stats__italic">*might change in future</i></h3>
-            
-          </div> <br />
-          <div class="ageContainer">
-    
-            <h3>Nationality: <span class="stats__stat">British</span></h3>
-          </div>
-
-          <div class="languagesContainer">
-            <h3>languages:</h3>
-            <div class="languages__list stats__stat">
-              <div id="english">  English   C2</div>
-              <div id="french">  French  C1</div>
-              <div id="spanish">  Spanish  A2</div>
-              
-            </div>
-          </div> 
-          <div class="ageContainer">
-            <h3>Prefered OS:   <span class="stats__stat">Gnu/linux (Ubuntu)</span></h3>
-          </div>
-          <div class="ageContainer">
-            <h3> Class: <span class="stats__stat"> Terminale Numerique</span></h3>
-          </div>
-          <div class="ageContainer">
-            <h3><span class="stats__stat"></span></h3>
-          </div>
-        </div>
-        <hr /> -->
+        
         <div class="abilityContainer">
           <!-- this is where I am going to flex stuff and basically inpire off of theo's thing -->
           <!-- this will have 2 divs that each will have 2 divs. therefore 7 divs total -->
@@ -159,7 +130,7 @@
                 <i class="fa-solid fa-file-word"></i> Tools:
               </h3>
               <div class="abilityContent">
-                <i class="fa-brands fa-linux"></i> UNIX <br />
+                <i class="fa-brands fa-linux"></i> Linux <br />
                 <i class="fa-brands fa-wordpress-simple"></i> Wordpress <br />
                 <i class="fa-brands fa-windows"></i> Windows <br />
                 <i class="fa-brands fa-discord"></i> Discord <br />
@@ -175,7 +146,8 @@
                 <i class="fa-regular fa-newspaper"></i> up to date<br />
               </div>
             </div>
-          </div>
+          
+        </div>
         </div>
         <hr />
 
@@ -198,7 +170,8 @@
             <img src="./me.jpg" alt="photo of me" class="aboutme__img" data-aos="fade-down-left" data-aos-duration="1600" data-aos-offset="300" />
           </div>
         </div>
-
+        </div>
+        </div>
         <div class="projectsContainer" id="projects">
           <h2 class="projects__Title" data-aos="flip-up" data-aos-duration="1600" data-aos-offset="300">What Have I worked on?</h2>
           <div class="projectsMiniContainer">
@@ -320,4 +293,5 @@
     src="https://kit.fontawesome.com/1d871d8ea3.js"
     crossorigin="anonymous"
   ></script>
+  <script src="particles.js"></script>
 </html>
