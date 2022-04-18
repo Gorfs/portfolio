@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>Archie Beales</title>
   </head>
@@ -28,24 +29,24 @@
       <div class="nav__optionsContainer">
         <!-- the options for the nav -->
         <ul class="nav__options">
-          <a href="#home" class="nav__option">
+          <a data-aos="fade-left" data-aos-duration="1000" href="#home" class="nav__option">
             <li>Home</li>
           </a>
-          <a href="#aboutme" class="nav__option">
+          <a data-aos="fade-left" data-aos-duration="1200" href="#aboutme" class="nav__option">
             <li>About me</li>
           </a>
-          <a href="#projects" class="nav__option">
+          <a data-aos="fade-left" data-aos-duration="1400" href="#projects" class="nav__option">
             <li>Projects</li>
           </a>
 
-          <a href="#contact" class="nav__option">
+          <a data-aos="fade-left" data-aos-duration="1600" data-aos-offset="400" href="#contact" class="nav__option">
             <li>Contact</li>
           </a>
         </ul>
       </div>
       <!-- here is the button for the toggle of the link on small screens -->
       <div class="buttonContainer">
-        <button class="btn">
+        <button data-aos="fade-left" data-aos-duration="1400" class="btn">
           <img
             src="./outline_dashboard_white_24dp.png"
             alt="show-links button image"
@@ -56,10 +57,10 @@
     <!-- end of the nav section -->
     <section class="intro">
       <div class="waveWrapper waveAnimation" id="home">
-        <div class="waveContentContainer">
-          <div class="wave__title"><i>Hey!</i></div>
+        <div class="waveContentContainer" data-aos="zoom-out-up" data-aos-duration="1000">
+          <div  class="wave__title"><i>Hey!</i></div>
           <h1 class="wave__name">I'm <span class="writerContainer"></span></h1>
-          <p class="wave__title"><i>And Welcome to my Portfolio!</i></p>
+          <p class="wave__title" ><i>And Welcome to my Portfolio!</i></p>
         </div>
 
         <div class="waveWrapperInner bgTop">
@@ -71,7 +72,7 @@
           ></div>
         </div>
         <div class="waveWrapperInner bgMiddle">
-          <div
+          <div  
             class="wave waveMiddle"
             style="
               background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png');
@@ -89,7 +90,7 @@
       </div>
       <!-- end of the waves. and thus the start of the about me section of the site -->
       <section class="stats" id="aboutme" >
-        <h2 class="stats__title"  >What can I do?</h2>
+        <h2 class="stats__title" data-aos="fade-up" data-aos-duration="600" data-aos-offset="300" >What can I do?</h2>
         <!-- 
         <div class="stats__container">
            this div will hold all the stats
@@ -127,7 +128,7 @@
           <!-- this is where I am going to flex stuff and basically inpire off of theo's thing -->
           <!-- this will have 2 divs that each will have 2 divs. therefore 7 divs total -->
           <div class="abilityMiniContainer">
-            <div class="ability" >
+            <div class="ability" data-aos="fade-right" data-aos-duration="600" data-aos-offset="300" >
               <h3 class="ability__title">
                 <i class="fa-solid fa-code"></i> Coding:
               </h3>
@@ -141,7 +142,7 @@
                 <i class="fa-solid fa-cloud"></i> Cloud computing
               </div>
             </div>
-            <div class="ability">
+            <div class="ability" data-aos="fade-up-right" data-aos-duration="600" data-aos-offset="300">
               <h3 class="ability__title">
                 <i class="fa-solid fa-earth-europe"></i> Languages:
               </h3>
@@ -153,7 +154,7 @@
             </div>
           </div>
           <div class="abilityMiniContainer">
-            <div class="ability">
+            <div class="ability" data-aos="fade-left" data-aos-duration="600" data-aos-offset="300">
               <h3 class="ability__title">
                 <i class="fa-solid fa-file-word"></i> Tools:
               </h3>
@@ -164,7 +165,7 @@
                 <i class="fa-brands fa-discord"></i> Discord <br />
               </div>
             </div>
-            <div class="ability">
+            <div class="ability" data-aos="fade-up-left" data-aos-duration="600" data-aos-offset="300">
               <h3 class="ability__title">
                 <i class="fa-solid fa-universal-access"></i> Qualities:
               </h3>
@@ -179,9 +180,9 @@
         <hr />
 
         <div class="aboutme">
-          <div class="aboutme__main">
-            <h3 class="aboutme__title">A bit about me:</h3>
-            <p class="aboutme__content">
+          <div class="aboutme__main" data-aos="fade-down-right" data-aos-duration="1600" data-aos-offset="300" data-aos-easing="ease-out-quad">
+            <h3 class="aboutme__title" data-aos="fade-up" data-aos-duration="600" data-aos-offset="300">A bit about me:</h3>
+            <p class="aboutme__content" data-aos="fade-up" data-aos-duration="600" data-aos-offset="400">
               My name is Archie beales and I am 17 years old living in Salon de
               Provence in the south of France<br />I have always been interested
               in computers, and video games, I have been playing with PCs since
@@ -194,15 +195,15 @@
             </p>
           </div>
           <div class="photo">
-            <img src="./me.jpg" alt="photo of me" class="aboutme__img" />
+            <img src="./me.jpg" alt="photo of me" class="aboutme__img" data-aos="fade-down-left" data-aos-duration="1600" data-aos-offset="300" />
           </div>
         </div>
 
         <div class="projectsContainer" id="projects">
-          <h2 class="projects__Title">What Have I worked on?</h2>
+          <h2 class="projects__Title" data-aos="flip-up" data-aos-duration="1600" data-aos-offset="300">What Have I worked on?</h2>
           <div class="projectsMiniContainer">
             <a href="#" class="projectLink">
-              <div class="project">
+              <div class="project" data-aos="fade-up-right" data-aos-duration="900" data-aos-offset="600">
                 <img
                   src="./boni.png"
                   alt="picture of discord profile of my bot"
@@ -221,7 +222,7 @@
                 href="https://gorfs.github.io/NSI-sweeper/"
                 class="projectLink"
               >
-                <div class="project">
+                <div class="project" data-aos="fade-down" data-aos-duration="900" data-aos-offset="400">
                   <img
                     src="./minesweeper.png"
                     alt="image of my etch-a-sketch game"
@@ -241,7 +242,7 @@
                 href="https://github.com/Gorfs/motionTracker"
                 class="projectLink"
               >
-                <div class="project">
+                <div class="project" data-aos="fade-up-left" data-aos-duration="900" data-aos-offset="300">
                   <img
                     src="./motion.jpg"
                     alt="image example of motion tracking"
@@ -275,15 +276,18 @@
           </div>
           <footer id="contact" class="footer">
           <div class="contact">
-            <a href="https://github.com/Gorfs">
-              <i class="fa-brands fa-github"></i> Github</a
-            ><a href="https://www.instagram.com/gorfgorffrommars/"><i class="fa-brands fa-instagram"></i> Instagram</a>
-            <a href="mailto:archiebeales@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i> archiebeales@gmail.com</a>
-            <a href="#"><i class="fa-brands fa-discord"></i> Gorfgorf23#7350</a>
+            <a href="https://github.com/Gorfs" data-aos="fade-up" data-aos-duration="600" data-aos-offset="00">
+              <p><i class="fa-brands fa-github"></i> Github</p> </a
+            >
+            <a href="mailto:archiebeales@gmail.com" target="_blank" data-aos="fade-up" data-aos-duration="900" data-aos-offset="00"><p><i class="fa-solid fa-envelope"></i> archiebeales@gmail.com</p> </a>
+            <a href="#" data-aos="fade-up" data-aos-duration="900" data-aos-offset="00"><p><i class="fa-brands fa-discord"></i> Gorfgorf23#7350</p></a>
           </footer>
       </section>
     </section>
-  
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
   <script
     src="https://unpkg.com/react@18/umd/react.development.js"
