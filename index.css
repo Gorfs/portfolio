@@ -327,6 +327,20 @@ body {
   border-radius: 20px;
   padding: 20px;
   font-size: 19px;
+  max-width: 40%;
+}
+
+@media only screen and (max-width: 860px) {
+  .aboutme {
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .aboutme__img {
+    max-width: 60%;
+    margin-top: 5vw;
+  }
 }
 
 .projectsContainer {
