@@ -4,6 +4,7 @@ body {
   margin-top: 0px;
   margin-bottom: 0px;
   min-height: 200vh;
+  min-width: 100% !important;
 }
 html {
   scroll-behavior: smooth;
@@ -345,6 +346,9 @@ html {
   .aboutme__img {
     max-width: 60%;
     margin-top: 5vw;
+  }
+  .aboutme__main {
+    max-width: 80%;
   }
 }
 
