@@ -28,17 +28,17 @@
       <div class="nav__optionsContainer">
         <!-- the options for the nav -->
         <ul class="nav__options">
-          <a href="" class="nav__option">
+          <a href="#home" class="nav__option">
             <li>Home</li>
           </a>
-          <a href="" class="nav__option">
+          <a href="#aboutme" class="nav__option">
             <li>About me</li>
           </a>
-          <a href="" class="nav__option">
+          <a href="#projects" class="nav__option">
             <li>Projects</li>
           </a>
 
-          <a href="" class="nav__option">
+          <a href="#contact" class="nav__option">
             <li>Contact</li>
           </a>
         </ul>
@@ -55,7 +55,7 @@
     </nav>
     <!-- end of the nav section -->
     <section class="intro">
-      <div class="waveWrapper waveAnimation">
+      <div class="waveWrapper waveAnimation" id="home">
         <div class="waveContentContainer">
           <div class="wave__title"><i>Hey!</i></div>
           <h1 class="wave__name">I'm <span class="writerContainer"></span></h1>
@@ -88,8 +88,8 @@
         </div>
       </div>
       <!-- end of the waves. and thus the start of the about me section of the site -->
-      <section class="stats" id="aboutMe">
-        <h2 class="stats__title">What can I do?</h2>
+      <section class="stats" id="aboutme" >
+        <h2 class="stats__title"  >What can I do?</h2>
         <!-- 
         <div class="stats__container">
            this div will hold all the stats
@@ -127,7 +127,7 @@
           <!-- this is where I am going to flex stuff and basically inpire off of theo's thing -->
           <!-- this will have 2 divs that each will have 2 divs. therefore 7 divs total -->
           <div class="abilityMiniContainer">
-            <div class="ability">
+            <div class="ability" >
               <h3 class="ability__title">
                 <i class="fa-solid fa-code"></i> Coding:
               </h3>
@@ -177,6 +177,7 @@
           </div>
         </div>
         <hr />
+
         <div class="aboutme">
           <div class="aboutme__main">
             <h3 class="aboutme__title">A bit about me:</h3>
@@ -197,7 +198,7 @@
           </div>
         </div>
 
-        <div class="projectsContainer">
+        <div class="projectsContainer" id="projects">
           <h2 class="projects__Title">What Have I worked on?</h2>
           <div class="projectsMiniContainer">
             <a href="#" class="projectLink">
@@ -270,15 +271,19 @@
           ></path>
         </svg>
 
-        <footer class="footer">
+        
+          </div>
+          <footer id="contact" class="footer">
           <div class="contact">
             <a href="https://github.com/Gorfs">
               <i class="fa-brands fa-github"></i> Github</a
-            >
-          </div>
-        </footer>
+            ><a href="https://www.instagram.com/gorfgorffrommars/"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            <a href="mailto:archiebeales@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i> archiebeales@gmail.com</a>
+            <a href="#"><i class="fa-brands fa-discord"></i> Gorfgorf23#7350</a>
+          </footer>
       </section>
     </section>
+  
   </body>
   <script
     src="https://unpkg.com/react@18/umd/react.development.js"

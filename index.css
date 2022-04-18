@@ -5,6 +5,10 @@ body {
   margin-bottom: 0px;
   min-height: 200vh;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 .hidden {
   display: none;
 }
@@ -61,7 +65,7 @@ body {
   width: 100%;
   margin-top: 0px;
   margin-bottom: 0px;
-  transition: background-color 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .nav__option:hover {
   background-color: rgb(54, 54, 52);
@@ -310,7 +314,7 @@ body {
   text-align: center;
   display: flex;
   flex-direction: row;
-  width: 100%;
+  max-width: 100%;
   justify-content: space-evenly;
 }
 .aboutme__title {
@@ -422,6 +426,8 @@ body {
   background-color: #5000ca;
   width: 100%;
   height: fit-content;
+  position: absolute;
+  bottom: -50px;
 }
 
 .contact {
@@ -430,4 +436,24 @@ body {
   width: 100%;
   justify-content: space-evenly;
   align-items: center;
+  color: white;
+  margin-top: 2vw;
+}
+.contact a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  transition: all 0.3s linear;
+}
+@media only screen and (max-width: 860px) {
+  .footer {
+    bottom: -40px;
+  }
+  .contact {
+    flex-direction: column;
+  }
+}
+.contact a:hover {
+  color: #1cb2bd;
+  transform: scale(90%, 90%);
 }
