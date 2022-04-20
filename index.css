@@ -384,6 +384,7 @@ html {
   transition: all 0.08s cubic-bezier(0.2, 0.5, 0, 2.21);
   margin-bottom: 13vw;
   z-index: 3;
+  max-width: 350px;
 }
 .project a {
   transition: all 0.08s cubic-bezier(0.2, 0.5, 0, 2.21);
@@ -469,6 +470,10 @@ html {
 }
 .update__img {
   min-height: 50px;
+  transition: all 0.4s cubic-bezier(0.37, -0.76, 0.01, 1.98);
+}
+.update__img:hover {
+  transform: scale(110%, 110%);
 }
 @media only screen and (max-width: 860px) {
   .footer {
