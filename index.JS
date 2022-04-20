@@ -1,5 +1,3 @@
-//import Typed from "typed.js"
-
 const LinkButton = document.querySelector(".btn")
 const links = document.querySelector(".nav__optionsContainer")
 
