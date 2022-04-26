@@ -170,64 +170,80 @@
         <div class="projectsContainer" id="projects">
           <h2 class="projects__Title" data-aos="flip-up" data-aos-duration="1600" data-aos-offset="300">Sur quoi j'ai travailler?</h2>
           <div class="projectsMiniContainer">
-            <a href="https://replit.com/@archiebeales/bonifabot#main.py" class="projectLink">
-              <div class="project" data-aos="fade-up-right" data-aos-duration="900" data-aos-offset="600">
-                <img
-                  src="./boni.png"
-                  alt="picture of discord profile of my bot"
-                />
+            <!-- the project miniContainer is the main container for all the different projects -->
+            <div class="projects__sideContainer">
+            <a href="https://replit.com/@archiebeales/bonifabot#main.py" class="project projectLink"  data-aos="fade-down-right" data-aos-duration="1000" data-aos-offset="100">
+                <!-- the discord projects -->
+                <img src="./boni.png" alt="screenshot of discord profile of the bot" class="project__img project__discordImg">
                 <div class="project__desc">
-                  <h4 class="project__descTitle">Bot Discord(API)</h4>
-                  <p class="project__descContent">
-                    Un Bot Discord qui regarde les message de notre classe <br>
-                    et renvoie des citations de notre Prof d'Histoire. 
-                    <br> Fait avec Discord.py
-                  </p>
-                </div>
-              </div></a
-            >
-            <div class="projectsSideContainer">
-              <a
-                href="https://gorfs.github.io/NSI-sweeper/"
-                class="projectLink"
-              >
-                <div class="project" data-aos="fade-down" data-aos-duration="900" data-aos-offset="400">
-                  <img
-                    src="./minesweeper.png"
-                    alt="image of my etch-a-sketch game"
-                    class="project__img"
-                  />
-                  <div class="project__desc">
-                    <h4 class="project__descTitle">Minesweeper</h4>
+                    <h2 class="project__descTitle">
+                        Bot Discord
+                    </h2>
                     <p class="project__descContent">
-                      Un jeu Minesweeper fais avec Javascript<br />
-                      travailler en collaboration avec des amis. <br> contient aussi un server http en python dans la branch "backEnd"
+                        un bot discord fait pour envoyer des citations de notre professeur d'hitoire quand on avait besoin de motivation
                     </p>
-                  </div>
-                </div></a
-              >
 
-              <a
-                href="https://github.com/Gorfs/motionTracker"
-                class="projectLink"
-              >
-                <div class="project" data-aos="fade-up-left" data-aos-duration="900" data-aos-offset="300">
-                  <img
-                    src="./motion.jpg"
-                    alt="image example of motion tracking"
-                    class="project__img"
-                  />
-                  <div class="project__desc">
-                    <h4 class="project__descTitle">Capteur de mouvement</h4>
+                </div>
+            </a>
+            <a href="https://github.com/Gorfs/Codewars" class="project projectLink"  data-aos="fade-up-right" data-aos-duration="1000" data-aos-offset="300">
+                <!-- the Codewars Repo -->
+                <img src="./CodeWars.svg" alt="Codwars logo" class="project__img">
+                <div class="project__desc">
+                    <h2 class="project__descTitle">
+                        CodeWars
+                    </h2>
                     <p class="project__descContent">
-                      Un capteur de mouvement fais en Python avec Open CV<br />
-                      Pour regarder et Memoriser les temps que mes parents sont rentrer dans ma chambre
+                       Un dossier qui contient tous mes reponse des defis CodeWars, un site qui offres des millier de defis a resoudre avec la programmation
                     </p>
-                  </div>
-                </div></a
-              >
+
+                </div>
+            </a>
             </div>
-          </div>
+            <div class="projects__sideContainer">
+                <a href="https://gorfs.github.io/NSI-sweeper/" class="project projectLink" data-aos="fade-down-left" data-aos-duration="1000" data-aos-offset="300">
+                <!-- Minesweeper Project -->
+                <img src="./minesweeper.png" alt="screenshot of My minesweeper game" class="project__img">
+                <div class="project__desc">
+                    <h2 class="project__descTitle">
+                        Minesweeper
+                    </h2>
+                    <p class="project__descContent">
+                        Un jeu Minesweeper fait en Javascript.
+                        Ce dossier contient aussi un server web dans la branch "backEnd"
+                    </p>
+
+                </div>
+            </a>
+                <a href="https://github.com/Gorfs/FCAutojumper" data-aos="fade-left" data-aos-duration="1000" class="project projectLink">
+                <!-- the FC auto jumper -->
+                <img src="./ED.jpg" alt="Picture of a fleet carrier in the game Elite dangerous" class="project__img">
+                <div class="project__desc">
+                    <h2 class="project__descTitle">
+                        Bot vaisseau spacial
+                    </h2>
+                    <p class="project__descContent">
+                       Un bot que j'ai fait pour deplacer automatiquement un vaisseau spacial immense dans le jeu "Elite Dangerous"
+                       Utiliser une bonne quantite de programation orienter object
+                    </p>
+
+                </div>
+            </a>
+                <a href="https://github.com/Gorfs/motionTracker" class="project projectLink"
+                data-aos="fade-up-left" data-aos-duration="1000" data-aos-offset="200">
+                <!-- the motion tracker -->
+                <img src="./motion.jpg" alt="demo of motion tracker " class="project__img">
+                <div class="project__desc">
+                    <h2 class="project__descTitle">
+                        Capteur de mouvement
+                    </h2>
+                    <p class="project__descContent">
+                        Un capteur de Mouvement que j'ai coder avec OpenCV pour voir quand ma mere rentrer dans ma chambre sans que je sache.
+                    </p>
+
+                </div>
+            </a>
+            </div>
+            </div>
         </div>
         <svg
           class="wave2"

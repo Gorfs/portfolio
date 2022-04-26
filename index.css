@@ -380,11 +380,12 @@ html {
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.158);
   text-align: center;
-  box-shadow: 5px 5px 15px 5px #bfbfbf;
+  box-shadow: 5px 5px 15px 5px #cf65f0;
   transition: all 0.08s cubic-bezier(0.2, 0.5, 0, 2.21);
   margin-bottom: 13vw;
   z-index: 3;
   max-width: 350px;
+  background-color: rgba(0, 0, 0, 0.473);
 }
 .project a {
   transition: all 0.08s cubic-bezier(0.2, 0.5, 0, 2.21);
@@ -397,23 +398,25 @@ html {
 }
 
 .project__img {
-  max-height: 200px;
+  max-height: 300px;
   width: 100%;
 }
 .projectLink {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
-.projectsSideContainer {
+.projects__sideContainer {
   display: flex;
   flex-direction: column;
-
   height: 100%;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 .project a:hover {
   transform: scale(90%, 90%);
+}
+.project__discordImg {
+  max-height: 500px;
 }
 @media only screen and (max-width: 860px) {
   .projectsMiniContainer {

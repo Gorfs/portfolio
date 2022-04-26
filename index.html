@@ -175,64 +175,82 @@
         <div class="projectsContainer" id="projects">
           <h2 class="projects__Title" data-aos="flip-up" data-aos-duration="1600" data-aos-offset="300">What have I worked on?</h2>
           <div class="projectsMiniContainer">
-            <a href="https://replit.com/@archiebeales/bonifabot#main.py" class="projectLink">
-              <div class="project" data-aos="fade-up-right" data-aos-duration="900" data-aos-offset="600">
-                <img
-                  src="./boni.png"
-                  alt="picture of discord profile of my bot"
-                />
+            <!-- the project miniContainer is the main container for all the different projects -->
+            <div class="projects__sideContainer">
+            <a href="https://replit.com/@archiebeales/bonifabot#main.py" class="project projectLink"  data-aos="fade-down-right" data-aos-duration="1000" data-aos-offset="100">
+                <!-- the discord projects -->
+                <img src="./boni.png" alt="screenshot of discord profile of the bot" class="project__img project__discordImg">
                 <div class="project__desc">
-                  <h4 class="project__descTitle">Discord Bot</h4>
-                  <p class="project__descContent">
-                    A discord bot made in a discord.py to emulate one of my
-                    teachers
-                  </p>
-                </div>
-              </div></a
-            >
-            <div class="projectsSideContainer">
-              <a
-                href="https://gorfs.github.io/NSI-sweeper/"
-                class="projectLink"
-              >
-                <div class="project" data-aos="fade-down" data-aos-duration="900" data-aos-offset="400">
-                  <img
-                    src="./minesweeper.png"
-                    alt="image of my etch-a-sketch game"
-                    class="project__img"
-                  />
-                  <div class="project__desc">
-                    <h4 class="project__descTitle">Minesweeper</h4>
+                    <h2 class="project__descTitle">
+                        Discord bot
+                    </h2>
                     <p class="project__descContent">
-                      A minesweeper game made with Javascript,<br />
-                      also includes a websever in branch "backEnd"
+                        A discord bot I made with dicord.py to read give quotes from my history teacher
                     </p>
-                  </div>
-                </div></a
-              >
 
-              <a
-                href="https://github.com/Gorfs/motionTracker"
-                class="projectLink"
-              >
-                <div class="project" data-aos="fade-up-left" data-aos-duration="900" data-aos-offset="300">
-                  <img
-                    src="./motion.jpg"
-                    alt="image example of motion tracking"
-                    class="project__img"
-                  />
-                  <div class="project__desc">
-                    <h4 class="project__descTitle">Motion Tracker</h4>
+                </div>
+            </a>
+            <a href="https://github.com/Gorfs/Codewars" class="project projectLink"  data-aos="fade-up-right" data-aos-duration="1000" data-aos-offset="300">
+                <!-- the Codewars Repo -->
+                <img src="./CodeWars.svg" alt="Codwars logo" class="project__img">
+                <div class="project__desc">
+                    <h2 class="project__descTitle">
+                        CodeWars
+                    </h2>
                     <p class="project__descContent">
-                      using OpenCv and python I made a motion tracker <br />
-                      to see when my Mum went into my room
+                       A repository with my answers to Codewars problems I have solved.
+                       Code wars is online coding problem solving comunity which has thousands of 
+                       complex and challenging challenges to solve, like leetcode.
                     </p>
-                  </div>
-                </div></a
-              >
+
+                </div>
+            </a>
+            </div>
+            <div class="projects__sideContainer">
+                <a href="https://gorfs.github.io/NSI-sweeper/" class="project projectLink" data-aos="fade-down-left" data-aos-duration="1000" data-aos-offset="300">
+                <!-- Minesweeper Project -->
+                <img src="./minesweeper.png" alt="screenshot of My minesweeper game" class="project__img">
+                <div class="project__desc">
+                    <h2 class="project__descTitle">
+                        Minesweeper
+                    </h2>
+                    <p class="project__descContent">
+                        A minesweeper game made with Javascript.
+                        Also contains a webserver and webapp like leaderboard in the "backEnd" branch of the repository
+                    </p>
+
+                </div>
+            </a>
+                <a href="https://github.com/Gorfs/FCAutojumper" data-aos="fade-left" data-aos-duration="1000" class="project projectLink">
+                <!-- the FC auto jumper -->
+                <img src="./ED.jpg" alt="Picture of a fleet carrier in the game Elite dangerous" class="project__img">
+                <div class="project__desc">
+                    <h2 class="project__descTitle">
+                        Fleet carrier auto Jumper
+                    </h2>
+                    <p class="project__descContent">
+                       A bot that uses pydirect input and a csv route to automatically jump a spac ship in the game elite dangerous to various locations around the game world
+                    </p>
+
+                </div>
+            </a>
+                <a href="https://github.com/Gorfs/motionTracker" class="project projectLink"
+                data-aos="fade-up-left" data-aos-duration="1000" data-aos-offset="200">
+                <!-- the motion tracker -->
+                <img src="./motion.jpg" alt="demo of motion tracker " class="project__img">
+                <div class="project__desc">
+                    <h2 class="project__descTitle">
+                        Motion tracker
+                    </h2>
+                    <p class="project__descContent">
+                        A motion tracker made in python with OpenCV to track when my Mother went into my room without me knowing
+                    </p>
+
+                </div>
+            </a>
+            </div>
             </div>
           </div>
-        </div>
         <svg
           class="wave2"
           xmlns="http://www.w3.org/2000/svg"
@@ -255,7 +273,7 @@
             >
             <a href="mailto:archiebeales@gmail.com" target="_blank" data-aos="fade-up" data-aos-duration="900" data-aos-offset="00"><p><i class="fa-solid fa-envelope"></i> archiebeales@gmail.com</p> </a>
             <a href="#" data-aos="fade-up" data-aos-duration="900" data-aos-offset="00"><p><i class="fa-brands fa-discord"></i> Gorfgorf23#7350</p></a></div>
-            <a class="update" data-aos="fade-up" data-aos-offset="0" href="https://github.com/Gorfs/portfolio">
+            <a class="update" data-aos="fade-up" data-aos-offset="-10" href="https://github.com/Gorfs/portfolio">
               <img class="update__img" src="https://img.shields.io/github/last-commit/Gorfs/portfolio" alt="last commit shield">
             </a>
           </footer>
