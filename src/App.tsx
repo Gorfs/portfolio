@@ -50,7 +50,7 @@ function App() {
           <div className="md:w-1/2 mt-8 md:mt-0">
             <div className="relative w-64 h-64 mx-auto">
               <img
-                src="./portrait.jpeg"
+                src="portrait.jpeg"
                 alt="Profile"
                 className="rounded-full w-full h-full object-cover border-4 border-slate-600 shadow-[0_0_30px_rgba(148,163,184,0.3)] transition-transform duration-300 hover:scale-105"
               />
