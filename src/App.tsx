@@ -1,4 +1,3 @@
-import React from 'react';
 import { Github, Mail, FileText, ExternalLink, GraduationCap, Linkedin } from 'lucide-react';
 
 function App() {
