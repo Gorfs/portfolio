@@ -38,7 +38,7 @@ function App() {
                 View Projects
               </a>
               <a 
-                href="/ARCHIE_CV_FRENCH.pdf" 
+                href="./ARCHIE_CV_FRENCH.pdf" 
                 className="inline-flex items-center gap-2 bg-slate-600 hover:bg-slate-700 px-6 py-2 rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(148,163,184,0.5)]"
               >
                 <FileText className="w-4 h-4" />
