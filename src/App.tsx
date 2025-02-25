@@ -49,7 +49,7 @@ function App() {
           <div className="md:w-1/2 mt-8 md:mt-0">
             <div className="relative w-64 h-64 mx-auto">
               <img
-                src="portrait.jpeg"
+                src="portrait.jpg"
                 alt="Profile"
                 className="rounded-full w-full h-full object-cover border-4 border-slate-600 shadow-[0_0_30px_rgba(148,163,184,0.3)] transition-transform duration-300 hover:scale-105"
               />
@@ -75,7 +75,7 @@ function App() {
         {/* Projects Section */}
         <section id="projects" className="mb-20 animate-slide-up" style={{ animationDelay: '0.4s' }}>
           <h2 className="text-3xl font-bold mb-8 text-center [text-shadow:_0_4px_12px_rgb(0_0_0_/_20%)]">Projects</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
               {
                 title: "Shell Program",
@@ -94,6 +94,12 @@ function App() {
                 description: "Backtracking sudoku solver written in Python",
                 tech: ["Python", "Backtracking", "Algorithms"],
                 link: "https://github.com/Gorfs/sudokuSolver"
+              },
+              {
+                title: "Formal logique solver",
+                description : "DPLL (Davis-Putnam-Logemann-Loveland) algorithm based formal logique solver written in Ocaml \n Optmized for speed",
+                tech: ["Ocaml", "Ocamlprof", "Backtracking"],
+                link: "https://github.com/Gorfs/dpll"
               }
             ].map((project, index) => (
               <div 
