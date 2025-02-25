@@ -25,12 +25,12 @@ function App() {
       {/* Main content */}
       <div className="relative z-10 container mx-auto px-4 py-16">
         {/* Hero Section */}
-        <div className="flex flex-col md:flex-row items-center justify-between mb-20 animate-fade-in">
+        <div className="flex flex-col md:flex-row md:flex-row-reverse items-center justify-between mb-20 animate-fade-in">
           <div className="md:w-1/2 text-center md:text-left">
             <h1 className="text-4xl md:text-6xl font-bold mb-4 [text-shadow:_0_4px_12px_rgb(0_0_0_/_20%)]">Archie Beales</h1>
             <h2 className="text-xl md:text-2xl text-slate-300 mb-6">Computer Science Student</h2>
             <p className="text-lg mb-8">Université Paris Cité</p>
-            <div className="flex flex-wrap gap-4 justify-center md:justify-start">
+            <div className="flex flex-wrap gap-4 w-full">
               <a href="#contact" className="bg-slate-600 hover:bg-slate-700 px-6 py-2 rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(148,163,184,0.5)] animate-pulse-shadow">
                 Contact Me
               </a>
@@ -57,20 +57,37 @@ function App() {
           </div>
         </div>
 
-        {/* Education Section */}
-        <section id="education" className="mb-20 animate-slide-up" style={{ animationDelay: '0.2s' }}>
-          <h2 className="text-3xl font-bold mb-8 text-center [text-shadow:_0_4px_12px_rgb(0_0_0_/_20%)]">Education</h2>
-          <div className="max-w-3xl mx-auto bg-white/5 backdrop-blur-lg rounded-lg p-8 shadow-[0_8px_32px_rgba(0,0,0,0.2)] hover:shadow-[0_16px_48px_rgba(0,0,0,0.3)] transition-all duration-300">
-            <div className="mb-6">
-              <div className="flex items-center gap-2 mb-2">
-                <GraduationCap className="w-6 h-6" />
-                <h3 className="text-xl font-semibold">Université Paris Cité</h3>
-              </div>
-              <p className="text-slate-300">Bachelor in Computer Science</p>
-              <p className="text-slate-400">2022 - Present</p>
+
+        <div className="md:flex md:flex-row mb-20 animate-slide-up" style={{ animationDelay: '0.2s' }}>
+          {/* About Me Section */}
+          <section id="about" className="md:w-1/2 mb-20 md:mb-0 md:mr-4 animate-slide-up" style={{ animationDelay: '0.2s' }}>
+            <h2 className="text-3xl font-bold mb-8 text-center [text-shadow:_0_4px_12px_rgb(0_0_0_/_20%)]">About Me</h2>
+            <div className="max-w-3xl mx-auto bg-white/5 backdrop-blur-lg rounded-lg p-8 shadow-[0_8px_32px_rgba(0,0,0,0.2)] hover:shadow-[0_16px_48px_rgba(0,0,0,0.3)] transition-all duration-300">
+              <p className="text-lg mb-4">
+                I am a computer science student at Université Paris Cité. 
+                I am passionate about software development and have experience in various programming languages and technologies.
+              </p>
+              <p className="text-lg">
+                I am always looking for new challenges and opportunities to learn and grow.
+              </p>
             </div>
-          </div>
-        </section>
+          </section>
+
+          {/* Education Section */}
+          <section id="education" className="md:w-1/2 animate-slide-up" style={{ animationDelay: '0.2s' }}>
+            <h2 className="text-3xl font-bold mb-8 text-center [text-shadow:_0_4px_12px_rgb(0_0_0_/_20%)]">Education</h2>
+            <div className="max-w-3xl mx-auto bg-white/5 backdrop-blur-lg rounded-lg p-8 shadow-[0_8px_32px_rgba(0,0,0,0.2)] hover:shadow-[0_16px_48px_rgba(0,0,0,0.3)] transition-all duration-300">
+              <div className="mb-6">
+                <div className="flex items-center gap-2 mb-2">
+                  <GraduationCap className="w-6 h-6" />
+                  <h3 className="text-xl font-semibold">Université Paris Cité</h3>
+                </div>
+                <p className="text-slate-300">Bachelor in Computer Science</p>
+                <p className="text-slate-400">2022 - Present</p>
+              </div>
+            </div>
+          </section>
+        </div>
 
         {/* Projects Section */}
         <section id="projects" className="mb-20 animate-slide-up" style={{ animationDelay: '0.4s' }}>
@@ -96,8 +113,8 @@ function App() {
                 link: "https://github.com/Gorfs/sudokuSolver"
               },
               {
-                title: "Formal logique solver",
-                description : "DPLL (Davis-Putnam-Logemann-Loveland) algorithm based formal logique solver written in Ocaml \n Optmized for speed",
+                title: "SAT solver",
+                description : "DPLL (Davis-Putnam-Logemann-Loveland) algorithm based statisfiability problem  logic solver written in Ocaml \n Optmized for speed",
                 tech: ["Ocaml", "Ocamlprof", "Backtracking"],
                 link: "https://github.com/Gorfs/dpll"
               }
